@@ -4,6 +4,7 @@ export interface IMainProps {
 export interface IMainStyledProps {
   $isHover?: boolean;
   $changed?: boolean;
+  $timeout?: number
 }
 export interface IMainServicesObject {
   first: string;
@@ -11,4 +12,3 @@ export interface IMainServicesObject {
   third: string;
   fourth: string;
 }
-export interface IMainStyledProps {}

@@ -6,9 +6,9 @@ import {
   ContentItemsStyled,
 } from './styled';
 import { handleOnHover, handleOutHover } from '../../utils/categories-services';
-import { Hover } from '../hover/hover';
+import { Hover } from '../hover';
 import { useState } from 'react';
-import { Main } from '../main/main';
+import { Advertisement } from '../advertisement';
 
 export const Categories = () => {
   const [isHover, setIsHover] = useState(false);
@@ -38,7 +38,7 @@ export const Categories = () => {
           ))}
         </CategoriesContentStyled>
       </CategoriesContainerStyled>
-      <Main isHover={isHover} />
+      <Advertisement isHover={isHover} />
     </>
   );
 };

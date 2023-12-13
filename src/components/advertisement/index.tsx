@@ -2,24 +2,22 @@ import {
   MainAdvertisementStyled,
   MainContainerStyles,
   MainStyled,
-} from './styled';
-import { IMainProps } from '../../types/main-types';
-import { useEffect, useState } from 'react';
-import { advertisementData } from '../../utils/main-services';
+} from "./styled";
+import { IMainProps } from "../../types/main-types";
+import { useEffect, useState } from "react";
+import { advertisementData } from "../../utils/main-services";
 
-export const Main = ({ isHover }: IMainProps) => {
+export const Advertisement = ({ isHover }: IMainProps) => {
   const [data, setData] = useState<any>(advertisementData.first);
-  const [changed, setChanged] = useState(false);
+  const timeout = 4000
 
   useEffect(() => {
-    setChanged(true);
     const interval = setInterval(() => {
       const keys = Object.keys(advertisementData);
       const randomKey = keys[Math.floor(Math.random() * keys.length)];
 
       setData(advertisementData[randomKey]);
-      setChanged(false);
-    }, 4000);
+    }, timeout);
 
     return () => clearInterval(interval);
   }, [data]);
@@ -27,7 +25,7 @@ export const Main = ({ isHover }: IMainProps) => {
   return (
     <MainStyled $isHover={isHover}>
       <MainContainerStyles>
-        <MainAdvertisementStyled $changed={changed}>
+        <MainAdvertisementStyled $timeout={timeout}>
           {data}
         </MainAdvertisementStyled>
       </MainContainerStyles>

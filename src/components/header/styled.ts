@@ -31,7 +31,7 @@ export const LeftInputStyled = styled.input`
     border: 1px solid gray;
     height: 15px;
     font-size: 14px;
-    padding: 6px;
+    padding: 13px;
     position: relative;
 `
 

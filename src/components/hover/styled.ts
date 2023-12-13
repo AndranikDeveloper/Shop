@@ -14,6 +14,7 @@ export const HoverContainerStyled = styled.div`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   padding: 20px;
+  min-height: 300px;
 `;
 export const HoverContentStyled = styled.div``;
 export const CategoryContentStyled = styled.div`
