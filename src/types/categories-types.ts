@@ -19,3 +19,8 @@ export interface CategoriesProps {
   isHover: boolean;
   setIsHover: (val: boolean) => void;
 }
+
+export interface ICategoriesData {
+  title: string;
+  subTitle: string;
+}
