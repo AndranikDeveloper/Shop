@@ -15,3 +15,7 @@ export interface ICategoryStyled {
 export interface ICategory {
   categoryName: string;
 }
+export interface CategoriesProps {
+  isHover: boolean;
+  setIsHover: (val: boolean) => void;
+}

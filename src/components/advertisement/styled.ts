@@ -7,8 +7,6 @@ export const MainStyled = styled.div<IMainStyledProps>`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: ${({ $isHover }) =>
-    $isHover ? "rgba(0, 0, 0, 0.5)" : "initial"};
 `;
 export const MainContainerStyles = styled.div`
   max-width: 1280px;
@@ -29,7 +27,8 @@ const animation = keyframes`
 export const MainAdvertisementStyled = styled.div<IMainStyledProps>`
   color: black;
   display: flex;
-  animation: ${animation} ${({ $timeout }) => $timeout}ms infinite;
+  animation: ${animation} ${({ $timeout }) => ($timeout as number) + 10}ms
+    infinite;
   justify-content: center;
   font-size: 40px;
   font-weight: 700;

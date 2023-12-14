@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import {
   BlockTextStyled,
   ContentBlockStyled,
@@ -14,15 +13,15 @@ import {
   VideoStyled,
 } from "./styled";
 import casmetic from "../../assets/cosmetic-image.png";
-import girlImage from '../../assets/girl-image.png'
-import socksImage from '../../assets/socks-image.png'
-import flatImage from '../../assets/flat-image.png'
+import girlImage from "../../assets/girl-image.png";
+import socksImage from "../../assets/socks-image.png";
+import flatImage from "../../assets/flat-image.png";
 import { Slide } from "../slide";
+import { ChristmasVideo } from "../christmas-video";
 
 export const Introduction = () => {
-  const videoUrl = useMemo(() => {
-    return "https://xcdn.next.co.uk/COMMON/Items/Default/Default/Videos/Gifitng-1-7x3-1.7MB.mp4";
-  }, []);
+  const videoUrl =
+    "https://xcdn.next.co.uk/COMMON/Items/Default/Default/Videos/Gifitng-1-7x3-1.7MB.mp4";
 
   return (
     <ContentStyled>
@@ -36,9 +35,9 @@ export const Introduction = () => {
         <VideoStyled src={videoUrl} muted autoPlay loop />
       </VideoContentStyled>
       <ImageFeatureStyled>
-        <FeatureImageStyled src={girlImage}/>
-        <FeatureImageStyled src={socksImage}/>
-        <FeatureImageStyled src={flatImage}/>
+        <FeatureImageStyled src={girlImage} />
+        <FeatureImageStyled src={socksImage} />
+        <FeatureImageStyled src={flatImage} />
       </ImageFeatureStyled>
       <ImagesBlockStyled>
         <div>
@@ -52,6 +51,7 @@ export const Introduction = () => {
         </RightSideStyled>
       </ImagesBlockStyled>
       <Slide />
+      <ChristmasVideo />
     </ContentStyled>
   );
 };

@@ -1,34 +1,37 @@
 import {
   CategoryContentStyled,
+  CategoryPreloaderStyled,
   CategoryTitleStyled,
   HoverContainerStyled,
   HoverContentStyled,
 } from "./styled";
 import { ICategory } from "../../types/categories-types";
 import { useData } from "../../hooks/useData";
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import preloader from "../../assets/Iphone-spinner-2.gif";
 
 export const Hover = ({ categoryName }: ICategory) => {
-  const {
-    category,
-    refetch: refetchCategory,
-    isLoading,
-  } = useData(categoryName);
-
-  useEffect(() => {
-    refetchCategory();
-  }, [refetchCategory]);
-console.log(isLoading);
+  const { category } = useData(categoryName);
+  const navigate = useNavigate();
 
   return (
     <HoverContainerStyled>
       <HoverContentStyled>
-        {isLoading ? <h1>Loading...</h1> : category?.map((c) => (
-          <CategoryContentStyled key={c.id}>
-            <CategoryTitleStyled>{c.title}</CategoryTitleStyled>
-            asdasdasd
+        {category?.length ? (
+          <CategoryContentStyled>
+            <CategoryTitleStyled
+              onClick={() =>
+                navigate("/products", { state: { category, categoryName } })
+              }
+            >
+              Show All Things
+            </CategoryTitleStyled>
           </CategoryContentStyled>
-        ))}
+        ) : (
+          <CategoryContentStyled>
+            <CategoryPreloaderStyled src={preloader} />
+          </CategoryContentStyled>
+        )}
       </HoverContentStyled>
     </HoverContainerStyled>
   );

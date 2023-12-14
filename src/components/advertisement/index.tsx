@@ -9,7 +9,7 @@ import { advertisementData } from "../../utils/main-services";
 
 export const Advertisement = ({ isHover }: IMainProps) => {
   const [data, setData] = useState<any>(advertisementData.first);
-  const timeout = 4000
+  const timeout = 4000;
 
   useEffect(() => {
     const interval = setInterval(() => {

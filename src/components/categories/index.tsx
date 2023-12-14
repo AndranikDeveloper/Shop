@@ -1,18 +1,18 @@
-import { useData } from '../../hooks/useData';
+import { useData } from "../../hooks/useData";
 import {
   CategoriesContainerStyled,
   CategoriesContentStyled,
   ContentItemStyled,
   ContentItemsStyled,
-} from './styled';
-import { handleOnHover, handleOutHover } from '../../utils/categories-services';
-import { Hover } from '../hover';
-import { useState } from 'react';
-import { Advertisement } from '../advertisement';
+} from "./styled";
+import { handleOnHover, handleOutHover } from "../../utils/categories-services";
+import { Hover } from "../hover";
+import { useState } from "react";
+import { Advertisement } from "../advertisement";
+import { CategoriesProps } from "../../types/categories-types";
 
-export const Categories = () => {
-  const [isHover, setIsHover] = useState(false);
-  const [categoryName, setCategoryName] = useState('');
+export const Categories = ({ isHover, setIsHover }: CategoriesProps) => {
+  const [categoryName, setCategoryName] = useState("");
   const { categories } = useData(categoryName, isHover);
 
   return (

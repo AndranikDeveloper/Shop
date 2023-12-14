@@ -27,55 +27,55 @@ export const BlockTextStyled = styled.div`
 `;
 
 export const VideoContentStyled = styled.div`
-    margin-top: 10px;
-    width: 100%;
-`
+  margin-top: 10px;
+  width: 100%;
+`;
 export const VideoStyled = styled.video`
-    height: 100%;
-`
+  height: 100%;
+`;
 export const ImagesBlockStyled = styled.div`
-    display: flex;
-    height: 336px;
-    margin-top: 4px;
-`
-export const CosmeticImageStyled = styled.img``
+  display: flex;
+  height: 336px;
+  margin-top: 4px;
+`;
+export const CosmeticImageStyled = styled.img``;
 export const RightSideStyled = styled.div`
-    background-color: #13302B;
-    height: 100%;
-    width: 100%;
-    position: relative;
-`
+  background-color: #13302b;
+  height: 100%;
+  width: 100%;
+  position: relative;
+`;
 export const RightTextStyled = styled.div`
-    color: #E5C287;
-    font-size: 30px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    white-space: nowrap;
-`
+  color: #e5c287;
+  font-size: 30px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  white-space: nowrap;
+`;
 export const RightButtonStyled = styled.button`
-    border: none;
-    border-radius: 30px;
-    background-color: white;
-    padding: 15px 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    transition: all 0.3s ease;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  padding: 15px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    &:hover {
-        background-color: black;
-        color: white;
-    }
-`
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+`;
 
 export const ImageFeatureStyled = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-`
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+`;
 export const FeatureImageStyled = styled.img`
-    height: 516px;
-`
+  height: 516px;
+`;

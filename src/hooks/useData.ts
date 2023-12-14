@@ -1,25 +1,25 @@
-import { useQuery } from '@tanstack/react-query';
-import { getClothes } from '../services';
-import { ICategoryHoverProps } from '../types/categories-types';
+import { useQuery } from "@tanstack/react-query";
+import { getClothes } from "../services";
+import { ICategoryHoverProps } from "../types/categories-types";
 
 export const useData = (categoryName: string, isHover?: boolean) => {
   const clothes = useQuery({
-    queryKey: ['clothes'],
-    queryFn: () => getClothes('products'),
+    queryKey: ["clothes"],
+    queryFn: () => getClothes("products"),
   });
 
   const { data: categories } = useQuery({
-    queryKey: ['categories'],
-    queryFn: () => getClothes('products/categories'),
+    queryKey: ["categories"],
+    queryFn: () => getClothes("products/categories"),
   });
 
   const {
     data: category,
     isSuccess: isSuccessCategory,
-    refetch,
     isLoading,
+    isFetching,
   } = useQuery<ICategoryHoverProps[]>({
-    queryKey: ['category'],
+    queryKey: ["category"],
     queryFn: () => getClothes(`products/category/${categoryName}`),
     enabled: isHover,
   });
@@ -27,9 +27,8 @@ export const useData = (categoryName: string, isHover?: boolean) => {
   return {
     clothes,
     categories,
-    category,
+    category: isFetching ? [] : category,
     isSuccessCategory,
-    refetch,
     isLoading,
   };
 };
