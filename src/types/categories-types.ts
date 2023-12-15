@@ -1,4 +1,4 @@
-export interface ICategoryHoverProps {
+export interface ICategoryData {
   id: number;
   title: string;
   price: number;
@@ -23,4 +23,15 @@ export interface CategoriesProps {
 export interface ICategoriesData {
   title: string;
   subTitle: string;
+}
+
+// --------CATEGORY-SLICE--------------------------------------------------------------------------------------------------------------------------------------------------------------
+export interface ICategoryInitialState {
+  categoryData: ICategoryData[];
+}
+
+export interface ICategoryAction {
+  category: ICategoryData[];
+  key: string;
+  type: string;
 }

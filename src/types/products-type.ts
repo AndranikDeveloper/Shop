@@ -1,6 +1,8 @@
 export interface ISortItem {
-  id: number;
+  id: string;
   title: string;
+  key: string;
+  type: string;
 }
 export interface IProductsIconStyledProps {
   $isOpen: boolean;

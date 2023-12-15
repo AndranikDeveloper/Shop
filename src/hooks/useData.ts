@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { getClothes } from "../services";
-import { ICategoryHoverProps } from "../types/categories-types";
+import { ICategoryData } from "../types/categories-types";
 
 export const useData = (categoryName: string, isHover?: boolean) => {
   const clothes = useQuery({
@@ -18,7 +18,7 @@ export const useData = (categoryName: string, isHover?: boolean) => {
     isSuccess: isSuccessCategory,
     isLoading,
     isFetching,
-  } = useQuery<ICategoryHoverProps[]>({
+  } = useQuery<ICategoryData[]>({
     queryKey: ["category"],
     queryFn: () => getClothes(`products/category/${categoryName}`),
     enabled: isHover,

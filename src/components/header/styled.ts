@@ -28,6 +28,7 @@ export const LeftTitleStyled = styled.span`
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 600;
+  cursor: pointer;
 `;
 export const LeftInputStyled = styled.input`
   width: 400px;

@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import {
   ButtonBlockStyled,
   ItemStyled,
@@ -13,28 +13,32 @@ import {
   SortButtonTextStyled,
   SortIconStyled,
   SortItemsStyled,
-} from './styled';
-import React, { useState } from 'react';
-import { sortItems } from '../../utils/products-services';
+} from "./styled";
+import { useState } from "react";
+import { sortItems } from "../../utils/products-services";
+import { useAppDispatch } from "../../hooks/useStore";
+import { setCategoryData } from "../../store/categorySlice";
+import { Items } from "./items";
 
 export const Products = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [sortName, setSortName] = useState('Default');
+  const [sortName, setSortName] = useState("Default");
   const { state } = useLocation();
   const { category, categoryName } = state;
+  const dispatch = useAppDispatch();
 
-  function setSortType(title: string) {
+  function setSortType(title: string, key: string, type: string) {
     setSortName(title);
     setIsOpen(false);
+    dispatch(setCategoryData({ category, key, type }));
   }
 
-  function openTab(e: React.MouseEvent) {
-    e.stopPropagation();
+  function openTab() {
     setIsOpen((prev) => !prev);
   }
 
   return (
-    <ProductsStyled onClick={() => setIsOpen(false)}>
+    <ProductsStyled>
       <ProductsContainerStyled>
         <ProductsContentStyled>
           <ProductsLeftSideStyled>
@@ -52,14 +56,18 @@ export const Products = () => {
             </ButtonBlockStyled>
             <SortItemsStyled>
               {isOpen &&
-                sortItems.map(({ title, id }) => (
-                  <ItemStyled key={id} onClick={() => setSortType(title)}>
+                sortItems.map(({ title, id, key, type }) => (
+                  <ItemStyled
+                    key={id}
+                    onClick={() => setSortType(title, key, type)}
+                  >
                     {title}
                   </ItemStyled>
                 ))}
             </SortItemsStyled>
           </ProductsRightSideStyled>
         </ProductsContentStyled>
+        <Items category={category} />
       </ProductsContainerStyled>
     </ProductsStyled>
   );
