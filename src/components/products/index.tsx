@@ -14,11 +14,12 @@ import {
   SortIconStyled,
   SortItemsStyled,
 } from "./styled";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { sortItems } from "../../utils/products-services";
-import { useAppDispatch } from "../../hooks/useStore";
-import { setCategoryData } from "../../store/categorySlice";
+import { useAppDispatch, useAppSelector } from "../../hooks/useStore";
+import { createCategory, setCategoryData } from "../../store/categorySlice";
 import { Items } from "./items";
+import { SkeletonTheme } from "react-loading-skeleton";
 
 export const Products = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,16 +27,19 @@ export const Products = () => {
   const { state } = useLocation();
   const { category, categoryName } = state;
   const dispatch = useAppDispatch();
+  const categoryData = useAppSelector(
+    (state) => state.categorySlice.categoryData
+  );
 
   function setSortType(title: string, key: string, type: string) {
     setSortName(title);
     setIsOpen(false);
-    dispatch(setCategoryData({ category, key, type }));
+    dispatch(setCategoryData({ key, type }));
   }
 
-  function openTab() {
-    setIsOpen((prev) => !prev);
-  }
+  useEffect(() => {
+    dispatch(createCategory(category));
+  }, [category, dispatch]);
 
   return (
     <ProductsStyled>
@@ -43,13 +47,13 @@ export const Products = () => {
         <ProductsContentStyled>
           <ProductsLeftSideStyled>
             <LeftTextStyled>
-              {categoryName} ({category.length})
+              {categoryName} ({categoryData?.length})
             </LeftTextStyled>
           </ProductsLeftSideStyled>
           <ProductsRightSideStyled>
             <ButtonBlockStyled>
               <RightTextStyled>SORT</RightTextStyled>
-              <RightSortButtonStyled onClick={openTab}>
+              <RightSortButtonStyled onClick={() => setIsOpen((prev) => !prev)}>
                 <SortButtonTextStyled>{sortName}</SortButtonTextStyled>
                 <SortIconStyled $isOpen={isOpen} />
               </RightSortButtonStyled>
@@ -67,7 +71,7 @@ export const Products = () => {
             </SortItemsStyled>
           </ProductsRightSideStyled>
         </ProductsContentStyled>
-        <Items category={category} />
+        <Items category={categoryData} />
       </ProductsContainerStyled>
     </ProductsStyled>
   );
