@@ -6,7 +6,7 @@ export const ProductsStyled = styled.div`
   margin-top: 30px;
 `;
 export const ProductsContainerStyled = styled.div`
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 `;
 export const ProductsContentStyled = styled.div`
@@ -65,8 +65,9 @@ export const SortItemsStyled = styled.div`
   margin-top: 10px;
   margin-left: 55px;
   position: absolute;
-  z-index: 100;
-  top: 90px;
+  z-index: 999;
+  background-color: #fff;
+  top: 108px;
 `;
 export const ItemStyled = styled.div`
   width: 100%;

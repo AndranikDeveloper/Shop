@@ -7,3 +7,7 @@ export interface ISortItem {
 export interface IProductsIconStyledProps {
   $isOpen: boolean;
 }
+export interface IImagesData {
+  src: string;
+  id: string;
+}

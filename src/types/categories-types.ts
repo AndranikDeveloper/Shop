@@ -28,10 +28,10 @@ export interface ICategoriesData {
 // --------CATEGORY-SLICE--------------------------------------------------------------------------------------------------------------------------------------------------------------
 export interface ICategoryInitialState {
   categoryData: ICategoryData[];
+  defaultCategory: ICategoryData[];
 }
 
 export interface ICategoryAction {
-  category: ICategoryData[];
   key: string;
   type: string;
 }
