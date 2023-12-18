@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { IoIosArrowDown } from "react-icons/io";
-import { IProductsIconStyledProps } from "../../types/products-type";
+import styled from 'styled-components';
+import { IoIosArrowDown } from 'react-icons/io';
+import { IProductsIconStyledProps } from '../../types/products-type';
 
 export const ProductsStyled = styled.div`
   margin-top: 30px;
@@ -51,8 +51,8 @@ export const SortIconStyled = styled(IoIosArrowDown)<IProductsIconStyledProps>`
   width: 20px;
   height: 20px;
   transition: all 0.3s ease;
-  transform: ${({ $isOpen }) => $isOpen && "rotate(-180deg)"};
-  color: ${({ $isOpen }) => $isOpen && "rgb(105, 137, 0)"};
+  transform: ${({ $isOpen }) => $isOpen && 'rotate(-180deg)'};
+  color: ${({ $isOpen }) => $isOpen && 'rgb(105, 137, 0)'};
 `;
 export const SortItemsStyled = styled.div`
   border: 1px solid transparent;
@@ -64,6 +64,9 @@ export const SortItemsStyled = styled.div`
   padding: 10px 0 10px 0;
   margin-top: 10px;
   margin-left: 55px;
+  position: absolute;
+  z-index: 100;
+  top: 90px;
 `;
 export const ItemStyled = styled.div`
   width: 100%;
