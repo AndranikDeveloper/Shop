@@ -11,3 +11,7 @@ export interface IImagesData {
   src: string;
   id: string;
 }
+export interface IProductKinds {
+  id: string;
+  title: string;
+}

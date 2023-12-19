@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { IoIosArrowUp } from 'react-icons/io';
-import { IoIosArrowDown } from 'react-icons/io';
+import styled from "styled-components";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 interface SwiperStyledProps {
   $moveSize: number;
@@ -13,6 +13,7 @@ export const ProductContainerStyled = styled.div`
 `;
 export const ProductContentStyled = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 export const SwiperBarStyled = styled.div`
   margin-top: 60px;
@@ -54,12 +55,6 @@ export const DownIconStyled = styled(IoIosArrowDown)`
 // -------LEFT-SIDE--------------------------------------------
 export const LeftSideStyled = styled.div`
   display: flex;
-`;
-
-export const LeftImageStyled = styled.img`
-  width: 315px;
-  height: 473px;
-  margin: 20px 0 0 50px;
 `;
 
 export const RightSideStyled = styled.div``;

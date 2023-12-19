@@ -11,9 +11,11 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import categorySlice from "./categorySlice";
+import ratesSlice from "./ratesSlice";
 
 const rootReducer = combineReducers({
   categorySlice,
+  ratesSlice,
 });
 
 const persistConfig = {

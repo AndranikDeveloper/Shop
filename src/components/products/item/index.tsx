@@ -1,26 +1,17 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import {
-  ButtonWrapperStyled,
-  DownIconStyled,
-  LeftImageStyled,
   LeftSideStyled,
   ProductContainerStyled,
   ProductContentStyled,
   ProductStyled,
-  SwiperBarStyled,
-  SwiperBlockStyled,
-  SwiperImageStyled,
-  SwiperStyled,
-  UpIconStyled,
-} from './styled';
-import { useEffect, useState } from 'react';
+  RightSideStyled,
+} from "./styled";
+import { useEffect, useState } from "react";
 
-import {
-  imagesData,
-  selectImage,
-  swipe,
-} from '../../../utils/products-services';
-import { v4 } from 'uuid';
+import { imagesData } from "../../../utils/products-services";
+import { v4 } from "uuid";
+import { ProductLeftContent } from "../../product-left-content/index";
+import { ProductRightContent } from "../../product-right-content/index";
 
 export const Item = () => {
   const { state: product } = useLocation();
@@ -48,38 +39,27 @@ export const Item = () => {
     setImages((prev) => {
       return [{ src: product.image, id: v4() }, ...prev];
     });
-  }, [product.image]);
+  }, []);
 
   return (
     <ProductStyled>
       <ProductContainerStyled>
         <ProductContentStyled>
           <LeftSideStyled>
-            <SwiperBarStyled>
-              <ButtonWrapperStyled disabled={isDisabled.up}>
-                <UpIconStyled
-                  onClick={() => swipe('up', setMoveSize, setFirstImagesSize)}
-                />
-              </ButtonWrapperStyled>
-              <SwiperStyled>
-                {images?.map((image) => (
-                  <SwiperBlockStyled $moveSize={moveSize} key={image.id}>
-                    <SwiperImageStyled
-                      src={image.src}
-                      alt='swiper-item'
-                      onClick={() => selectImage(image.src, setProductImage)}
-                    />
-                  </SwiperBlockStyled>
-                ))}
-              </SwiperStyled>
-              <ButtonWrapperStyled disabled={isDisabled.down}>
-                <DownIconStyled
-                  onClick={() => swipe('down', setMoveSize, setFirstImagesSize)}
-                />
-              </ButtonWrapperStyled>
-            </SwiperBarStyled>
-            <LeftImageStyled src={productImage} />
+            <ProductLeftContent
+              moveSize={moveSize}
+              isDisabled={isDisabled}
+              setFirstImagesSize={setFirstImagesSize}
+              setMoveSize={setMoveSize}
+              setProductImage={setProductImage}
+              productImage={productImage}
+              images={images}
+            />
           </LeftSideStyled>
+
+          <RightSideStyled>
+            <ProductRightContent product={product} />
+          </RightSideStyled>
         </ProductContentStyled>
       </ProductContainerStyled>
     </ProductStyled>
