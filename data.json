@@ -1,482 +1,275 @@
-[
-  {
-    "item": {
-      "itemId": 1005006313985754,
-      "title": "Men Jockstrap Panties Sexy Hollow Soft Pouch Bulge Underwear Brief Underpants Male Low Waist Lingerie Underwear Thong Bikini",
-      "sales": 1,
-      "image": "//ae01.alicdn.com/kf/Sd2f0332d77dc488692405cf0e360351aQ.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 1.97,
-          "prices": {
-            "pc": 1.97,
-            "app": 1.97
-          }
-        }
+{
+  "products": [
+    {
+      "id": 5,
+      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "price": 695,
+      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+      "rate": 4.6,
+      "count": 400
+      }
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006318856832,
-      "title": "Men's Outdoor Tracksuit Winter Hoody Sweatshirt+Pant Athletic 2-Pcs Set New Male Casual Brand Letter Print Classic Skiing Suit",
-      "sales": 2,
-      "image": "//ae01.alicdn.com/kf/Sa9c23b9544354db08990310b08c1c2a3M.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 13.43,
-          "prices": {
-            "pc": 13.43,
-            "app": 13.43
-          }
-        }
+      {
+      "id": 6,
+      "title": "Solid Gold Petite Micropave ",
+      "price": 168,
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 70
+      }
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": true,
-      "shippingFee": 0,
-      "shippingDisplay": "Free shipping"
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006319993868,
-      "title": "Sweatshirt Men Chinese Style Demon 3D Printing Hoodie Sweatshirts Fashion Harajuku Pullovers Tracksuit For Men",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S74972f8c36a545a5ae23ac046cce6636s.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 8.48,
-          "prices": {
-            "pc": 8.48,
-            "app": 8.48
-          }
-        }
+      {
+      "id": 7,
+      "title": "White Gold Plated Princess",
+      "price": 9.99,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+      "rate": 3,
+      "count": 400
+      }
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006320096137,
-      "title": "CCM 2023 Spring and Autumn Men's New Diagonal Zip Hoodie Tracksuit Hooded Sweatshirt+Pants Pullover Sportswear Suits",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S3668e1d0efd947cbaa5a7d63227c9bd95.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 23.83,
-          "prices": {
-            "pc": 23.83,
-            "app": 23.83
-          }
-        }
+      {
+      "id": 8,
+      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "price": 10.99,
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+      "rate": 1.9,
+      "count": 100
+      }
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006320123092,
-      "title": "Men's Winter Warm Pants Thermal Trousers Middle Waist Fur Lined Jogger Men Fitness Sportswear Sweatpants Pants Clothing",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S671a7109f54b4273bcfd708310cc9ff0X.jpeg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 9.54,
-          "prices": {
-            "pc": 9.54,
-            "app": 9.54
-          }
+      {
+        "id": 9,
+        "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+        "price": 64,
+        "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+        "rating": {
+        "rate": 3.3,
+        "count": 203
         }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": true,
-      "shippingFee": 0,
-      "shippingDisplay": "Free shipping"
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006316779699,
-      "title": "Low Rise Boxer Shorts Men Zipper Open Crotch Underwear Bulge Pouch Panties Boxer Trunks Male Breathable Underpants Sexy Lingerie",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S4e1c95c98b0f4c38935c86899b08dca9D.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 2.52,
-          "prices": {
-            "pc": 2.52,
-            "app": 2.52
-          }
+        },
+        {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        "rating": {
+        "rate": 2.9,
+        "count": 470
         }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006316773855,
-      "title": "Men Ultra Thin Ice Silk Shorts Breathable Sweat Boxer Briefs Sexy Convex Pouch Underpants Skin-friendly Underwear Lingerie",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S4cb27c96941f4337b114d334853953fal.jpeg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 1.57,
-          "prices": {
-            "pc": 1.57,
-            "app": 1.57
-          }
+        },
+        {
+        "id": 11,
+        "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+        "price": 109,
+        "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+        "rating": {
+        "rate": 4.8,
+        "count": 319
         }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006316777807,
-      "title": "Sexy Men Ice Silk Sheer Boxer Briefs Ultra Thin Breathable Sweat Shorts Underwear Comfortable Panties Casual Underpants Lingerie",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S3ba8d0ff66064637803d39f1ee3ec99cp.jpeg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 4.5,
-          "prices": {
-            "pc": 4.5,
-            "app": 4.5
-          }
+        },
+        {
+        "id": 12,
+        "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+        "price": 114,
+        "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+        "rating": {
+        "rate": 4.8,
+        "count": 400
         }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006318088457,
-      "title": "Red Farm Tractor Men's Boxer Briefs Highly Breathable Underwear High Quality 3D Print Shorts Gift Idea",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/Sa02ce7999850409e9b707024f7204402L.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 4.7,
-          "prices": {
-            "pc": 4.7,
-            "app": 4.7
-          }
+        },
+        {
+        "id": 13,
+        "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+        "price": 599,
+        "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+        "rating": {
+        "rate": 2.9,
+        "count": 250
         }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006319105982,
-      "title": "New Winter Men's Fashion Sports Hoodie Sports Set Casual Men's/Women's Sports Shirt Sports Set Hooded Sportswear",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/Sc9008a83af7140618f510bd908f5f05at.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 9.55,
-          "prices": {
-            "pc": 9.55,
-            "app": 9.55
-          }
+        },
+        {
+        "id": 14,
+        "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+        "price": 999.99,
+        "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+        "rating": {
+        "rate": 2.2,
+        "count": 140
         }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006319444017,
-      "title": "Autumn and winter warm hooded Sweatshirt+trousers suit Men's hooded patchwork sweater 2-piece pullover Hoodie Sportswear suit",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S76ec7cda695a4902bdd902622d2c91fdg.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 12.61,
-          "prices": {
-            "pc": 12.61,
-            "app": 12.61
+        },
+        {
+          "id": 1,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": 109.95,
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "rating": {
+          "rate": 3.9,
+          "count": 120
           }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006319424106,
-      "title": "Men's Fashion Hooded Sweatshirt Set Four Seasons Sportswear Set Sportswear Men's Pullover Jacket Set",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S1c8cac898d354a4a94ee920081ce462fw.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 12.61,
-          "prices": {
-            "pc": 12.61,
-            "app": 12.61
+          },
+          {
+          "id": 2,
+          "title": "Mens Casual Premium Slim Fit T-Shirts ",
+          "price": 22.3,
+          "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+          "rating": {
+          "rate": 4.1,
+          "count": 259
           }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006318091193,
-      "title": "Fashion Golf Logo Boxers Shorts Panties Male Underpants Stretch Briefs Underwear",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S07bb4ca5640344bd9f258fe67c197e9fq.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 3.28,
-          "prices": {
-            "pc": 3.28,
-            "app": 3.28
+          },
+          {
+          "id": 3,
+          "title": "Mens Cotton Jacket",
+          "price": 55.99,
+          "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+          "rating": {
+          "rate": 4.7,
+          "count": 500
           }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006317959960,
-      "title": "Cool Golf Logo Boxers Shorts Panties Male Underpants Comfortable Briefs Underwear",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/Sd8b34df3d1404741874963db9b8fc458E.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 3.28,
-          "prices": {
-            "pc": 3.28,
-            "app": 3.28
+          },
+          {
+          "id": 4,
+          "title": "Mens Casual Slim Fit",
+          "price": 15.99,
+          "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+          "rating": {
+          "rate": 2.1,
+          "count": 430
           }
-        }
+          },
+          {
+            "id": 15,
+            "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+            "price": 56.99,
+            "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+            "category": "women's clothing",
+            "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+            "rating": {
+            "rate": 2.6,
+            "count": 235
+            }
+            },
+            {
+            "id": 16,
+            "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+            "price": 29.95,
+            "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+            "category": "women's clothing",
+            "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+            "rating": {
+            "rate": 2.9,
+            "count": 340
+            }
+            },
+            {
+            "id": 17,
+            "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+            "price": 39.99,
+            "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+            "category": "women's clothing",
+            "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+            "rating": {
+            "rate": 3.8,
+            "count": 679
+            }
+            },
+            {
+            "id": 18,
+            "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+            "price": 9.85,
+            "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+            "category": "women's clothing",
+            "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+            "rating": {
+            "rate": 4.7,
+            "count": 130
+            }
+            },
+            {
+            "id": 19,
+            "title": "Opna Women's Short Sleeve Moisture",
+            "price": 7.95,
+            "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+            "category": "women's clothing",
+            "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+            "rating": {
+            "rate": 4.5,
+            "count": 146
+            }
+            },
+            {
+            "id": 20,
+            "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+            "price": 12.99,
+            "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+            "category": "women's clothing",
+            "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+            "rating": {
+            "rate": 3.6,
+            "count": 145
+            }
+            }
+  ],
+  "categories": [
+    "electronics",
+    "jewelery",
+    "men's clothing",
+    "women's clothing"
+    ],
+  "users": [
+    {
+      "address": {
+      "geolocation": {
+      "lat": "-37.3159",
+      "long": "81.1496"
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006317976846,
-      "title": "Male Novelty Golf Logo Underwear Boxer Briefs Stretch Shorts Panties Underpants",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S8d09555f86344548b482155199ca57288.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 3.28,
-          "prices": {
-            "pc": 3.28,
-            "app": 3.28
-          }
-        }
+      "city": "kilcoole",
+      "country": "Belarusastan"
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006316595538,
-      "title": "Solid Color One-piece Shorts Bodysuit Wetsuit Gym Yoga Jumpsuit Men Shirt Underwear Playsuit Romper Pajamas Nightwear XXXXXL",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S51f2ab42ced843f8bf1a18706dde84f00.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 12.08,
-          "prices": {
-            "pc": 12.08,
-            "app": 12.08
-          }
-        }
+      "id": 1,
+      "email": "john@gmail.com",
+      "username": "johnd",
+      "password": "m38rmF$",
+      "name": {
+      "firstname": "john",
+      "lastname": "doe"
       },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": true,
-      "shippingFee": 0,
-      "shippingDisplay": "Free shipping"
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006317762304,
-      "title": "Tractors Men's Boxer Briefs special Highly Breathable Underwear Top Quality 3D Print Shorts Birthday Gifts",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S411881cf26a341448eeac069925f9563u.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 4.7,
-          "prices": {
-            "pc": 4.7,
-            "app": 4.7
-          }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006317671776,
-      "title": "Black And White Farm Tractor Man's Boxer Briefs Underwear Highly Breathable High Quality Gift Idea",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/S3ee62d5708d049f092a289525bec0bb9B.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 4.7,
-          "prices": {
-            "pc": 4.7,
-            "app": 4.7
-          }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006317655956,
-      "title": "Green Distracted By Tractors Men's Boxer Briefs special Highly Breathable Underwear Top Quality 3D Print Shorts Birthday Gifts",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/Sab98e52c1cd248d4ae8cc452b71950389.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 4.7,
-          "prices": {
-            "pc": 4.7,
-            "app": 4.7
-          }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": false,
-      "shippingFee": null,
-      "shippingDisplay": ""
-    }
-  },
-  {
-    "item": {
-      "itemId": 1005006315908366,
-      "title": "4PCS/LOT Cotton Mens Panties Soft Comfort Boxer Underwear Short Men Underpants Boxer Underpants Men Sports Boxers Briefs",
-      "sales": 0,
-      "image": "//ae01.alicdn.com/kf/Sffc12c8aa455454abc7514d1a3d2492d2.jpg",
-      "sku": {
-        "def": {
-          "price": null,
-          "promotionPrice": 9.2,
-          "prices": {
-            "pc": 9.2,
-            "app": 9.2
-          }
-        }
-      },
-      "averageStarRate": null
-    },
-    "delivery": {
-      "freeShipping": true,
-      "shippingFee": 0,
-      "shippingDisplay": "Free shipping"
-    }
-  }
-]
+      "phone": "1-570-236-7033",
+      "__v": 0,
+      "favorites": [],
+      "cart": []
+      }
+  ]
+   
+}

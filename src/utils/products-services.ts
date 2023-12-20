@@ -4,6 +4,9 @@ import { v4 } from "uuid";
 import { ICategoryData } from "../types/categories-types";
 import { getImage } from "./images-services";
 import { Dispatch, SetStateAction } from "react";
+import { setMyRates } from "../store/ratesSlice";
+import { setNewProduct } from "../store/changedProductSlice";
+import { AppDispatch } from "../store/store";
 
 export const sortItems: ISortItem[] = [
   { title: "Price: Low-High", id: v4(), key: "price", type: "asc" },
@@ -71,4 +74,23 @@ export function selectKind(
   chosenKind: IProductKinds
 ) {
   setCurrentKind(chosenKind);
+}
+
+// -------CHANGE-PRODUCT-RATE-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+export function setToMyRates(
+  rateVal: number,
+  setRating: (val: number) => void,
+  product: ICategoryData,
+  dispatch: AppDispatch
+) {
+  setRating(rateVal);
+  const changedProduct = {
+    ...product,
+    rating: {
+      ...product.rating,
+      rate: rateVal,
+    },
+  };
+  dispatch(setMyRates(changedProduct));
+  dispatch(setNewProduct(changedProduct));
 }

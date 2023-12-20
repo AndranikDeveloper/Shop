@@ -71,7 +71,7 @@ export const ProductLeftContent: React.FC<ProductLeftContentProps> = ({
             height: 1800,
           },
         }}
-        style={{ margin: "20px 0 0 50px", position: "absolute", zIndex: 10 }}
+        style={{ margin: "20px 0 0 50px" }}
       />
     </>
   );

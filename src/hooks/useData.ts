@@ -10,7 +10,7 @@ export const useData = (categoryName: string, isHover?: boolean) => {
 
   const { data: categories } = useQuery({
     queryKey: ["categories"],
-    queryFn: () => getClothes("products/categories"),
+    queryFn: () => getClothes("categories"),
   });
 
   const {
@@ -20,7 +20,7 @@ export const useData = (categoryName: string, isHover?: boolean) => {
     isFetching,
   } = useQuery<ICategoryData[]>({
     queryKey: ["category"],
-    queryFn: () => getClothes(`products/category/${categoryName}`),
+    queryFn: () => getClothes(`products?category=${categoryName}`),
     enabled: isHover,
   });
 

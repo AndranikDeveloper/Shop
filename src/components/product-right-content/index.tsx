@@ -14,8 +14,9 @@ import {
 } from "./styled";
 import { IoMdStar } from "react-icons/io";
 import { ProductKind } from "../product-kind";
-import { useAppDispatch, useAppSelector } from "../../hooks/useStore";
-import { setMyRates } from "../../store/ratesSlice";
+import { setNewProduct } from "../../store/changedProductSlice";
+import { useFeatures } from "../../hooks/useFeatures";
+import { setToMyRates } from "../../utils/products-services";
 
 interface IProductTypeProps {
   product: ICategoryData;
@@ -24,23 +25,12 @@ interface IProductTypeProps {
 export const ProductRightContent: React.FC<IProductTypeProps> = ({
   product,
 }) => {
-  const [rating, setRating] = useState(product.rating.rate);
-  const [ratedProduct, setRatedProduct] = useState<ICategoryData>(product);
-  const dispatch = useAppDispatch();
+  const { ratedProduct, dispatch } = useFeatures();
+  const [rating, setRating] = useState(ratedProduct?.rating.rate);
 
-  useEffect(() => {}, []);
-
-  function setToMyRates(rateVal: number) {
-    setRating(rateVal);
-    const changedProduct = {
-      ...product,
-      rating: {
-        ...product.rating,
-        rate: rateVal,
-      },
-    };
-    dispatch(setMyRates(changedProduct));
-  }
+  useEffect(() => {
+    dispatch(setNewProduct(product));
+  }, [dispatch, product]);
 
   return (
     <ProductStyled>
@@ -49,9 +39,9 @@ export const ProductRightContent: React.FC<IProductTypeProps> = ({
       </ProductBarStyled>
       <InfoStyled>
         <InfoLeftStyled>
-          <InfoTitleStyled>{product.title}</InfoTitleStyled>
+          <InfoTitleStyled>{ratedProduct?.title}</InfoTitleStyled>
           <InfoRatingStyled>
-            {[...Array(5)].map((star, idx) => {
+            {[...Array(5)].map((_, idx) => {
               const currentRate = idx + 1;
               return (
                 <>
@@ -60,12 +50,14 @@ export const ProductRightContent: React.FC<IProductTypeProps> = ({
                       type="radio"
                       name="rate"
                       value={currentRate}
-                      onClick={() => setToMyRates(currentRate)}
+                      onClick={() =>
+                        setToMyRates(currentRate, setRating, product, dispatch)
+                      }
                     />
                     <IoMdStar
                       size={20}
                       style={{ cursor: "pointer" }}
-                      color={currentRate <= rating ? "black" : "gray"}
+                      color={currentRate <= rating! ? "black" : "gray"}
                     />
                   </label>
                 </>
@@ -75,8 +67,10 @@ export const ProductRightContent: React.FC<IProductTypeProps> = ({
         </InfoLeftStyled>
         <InfoRightStyled>
           <>
-            <InfoPriceStyled>{product.price}£</InfoPriceStyled>
-            <InfoCountStyled>Count:{product.rating.count}</InfoCountStyled>
+            <InfoPriceStyled>{ratedProduct?.price}£</InfoPriceStyled>
+            <InfoCountStyled>
+              Count:{ratedProduct?.rating?.count}
+            </InfoCountStyled>
           </>
         </InfoRightStyled>
       </InfoStyled>
