@@ -1,6 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ICategoryData } from "../../types/categories-types";
 import {
+  BottomTextStyled,
+  FavoritesBlockStyled,
+  FavoritesIconStyled,
+  FavoritesStyled,
+  FavoritesTextStyled,
+  InfoBottomStyled,
   InfoCountStyled,
   InfoLeftStyled,
   InfoPriceStyled,
@@ -11,11 +17,10 @@ import {
   ProductBarStyled,
   ProductStyled,
   RateInputStyled,
+  UnderLineStyled,
 } from "./styled";
 import { IoMdStar } from "react-icons/io";
 import { ProductKind } from "../product-kind";
-import { setNewProduct } from "../../store/changedProductSlice";
-import { useFeatures } from "../../hooks/useFeatures";
 import { setToMyRates } from "../../utils/products-services";
 
 interface IProductTypeProps {
@@ -25,12 +30,7 @@ interface IProductTypeProps {
 export const ProductRightContent: React.FC<IProductTypeProps> = ({
   product,
 }) => {
-  const { ratedProduct, dispatch } = useFeatures();
-  const [rating, setRating] = useState(ratedProduct?.rating.rate);
-
-  useEffect(() => {
-    dispatch(setNewProduct(product));
-  }, [dispatch, product]);
+  const [rating, setRating] = useState(product.rating.rate);
 
   return (
     <ProductStyled>
@@ -39,7 +39,7 @@ export const ProductRightContent: React.FC<IProductTypeProps> = ({
       </ProductBarStyled>
       <InfoStyled>
         <InfoLeftStyled>
-          <InfoTitleStyled>{ratedProduct?.title}</InfoTitleStyled>
+          <InfoTitleStyled>{product.title}</InfoTitleStyled>
           <InfoRatingStyled>
             {[...Array(5)].map((_, idx) => {
               const currentRate = idx + 1;
@@ -50,9 +50,7 @@ export const ProductRightContent: React.FC<IProductTypeProps> = ({
                       type="radio"
                       name="rate"
                       value={currentRate}
-                      onClick={() =>
-                        setToMyRates(currentRate, setRating, product, dispatch)
-                      }
+                      onClick={() => setToMyRates(currentRate, setRating)}
                     />
                     <IoMdStar
                       size={20}
@@ -67,13 +65,23 @@ export const ProductRightContent: React.FC<IProductTypeProps> = ({
         </InfoLeftStyled>
         <InfoRightStyled>
           <>
-            <InfoPriceStyled>{ratedProduct?.price}£</InfoPriceStyled>
-            <InfoCountStyled>
-              Count:{ratedProduct?.rating?.count}
-            </InfoCountStyled>
+            <InfoPriceStyled>{product.price}£</InfoPriceStyled>
+            <InfoCountStyled>Count:{product.rating.count}</InfoCountStyled>
           </>
         </InfoRightStyled>
       </InfoStyled>
+      <UnderLineStyled style={{ marginTop: "10px" }} />
+      <InfoBottomStyled>
+        <h3>Description</h3>
+        <BottomTextStyled>{product.description}</BottomTextStyled>
+      </InfoBottomStyled>
+
+      <FavoritesStyled>
+        <FavoritesBlockStyled>
+          <FavoritesTextStyled>Add to my Favorites</FavoritesTextStyled>
+          <FavoritesIconStyled />
+        </FavoritesBlockStyled>
+      </FavoritesStyled>
     </ProductStyled>
   );
 };
