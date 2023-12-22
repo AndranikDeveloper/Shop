@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import {
   ButtonBlockStyled,
   ItemStyled,
@@ -13,16 +13,17 @@ import {
   SortButtonTextStyled,
   SortIconStyled,
   SortItemsStyled,
-} from './styled';
-import { useEffect, useState } from 'react';
-import { sortItems } from '../../utils/products-services';
-import { useAppDispatch, useAppSelector } from '../../hooks/useStore';
-import { createCategory, setCategoryData } from '../../store/categorySlice';
-import { Items } from './items';
+} from "./styled";
+import { useEffect, useState } from "react";
+import { sortItems } from "../../utils/products-services";
+import { useAppDispatch, useAppSelector } from "../../hooks/useStore";
+import { createCategory, setCategoryData } from "../../store/categorySlice";
+import { Items } from "./items";
+import { Header } from "../header";
 
 export const Products = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [sortName, setSortName] = useState('Default');
+  const [sortName, setSortName] = useState("Default");
   const { state } = useLocation();
   const { category, categoryName } = state;
   const dispatch = useAppDispatch();
@@ -41,37 +42,42 @@ export const Products = () => {
   }, [category, dispatch]);
 
   return (
-    <ProductsStyled>
-      <ProductsContainerStyled>
-        <ProductsContentStyled>
-          <ProductsLeftSideStyled>
-            <LeftTextStyled>
-              {categoryName} ({categoryData?.length})
-            </LeftTextStyled>
-          </ProductsLeftSideStyled>
-          <ProductsRightSideStyled>
-            <ButtonBlockStyled>
-              <RightTextStyled>SORT</RightTextStyled>
-              <RightSortButtonStyled onClick={() => setIsOpen((prev) => !prev)}>
-                <SortButtonTextStyled>{sortName}</SortButtonTextStyled>
-                <SortIconStyled $isOpen={isOpen} />
-              </RightSortButtonStyled>
-            </ButtonBlockStyled>
-            <SortItemsStyled>
-              {isOpen &&
-                sortItems.map(({ title, id, key, type }) => (
-                  <ItemStyled
-                    key={id}
-                    onClick={() => setSortType(title, key, type)}
-                  >
-                    {title}
-                  </ItemStyled>
-                ))}
-            </SortItemsStyled>
-          </ProductsRightSideStyled>
-        </ProductsContentStyled>
-        <Items category={categoryData} />
-      </ProductsContainerStyled>
-    </ProductsStyled>
+    <>
+      <Header />
+      <ProductsStyled>
+        <ProductsContainerStyled>
+          <ProductsContentStyled>
+            <ProductsLeftSideStyled>
+              <LeftTextStyled>
+                {categoryName} ({categoryData?.length})
+              </LeftTextStyled>
+            </ProductsLeftSideStyled>
+            <ProductsRightSideStyled>
+              <ButtonBlockStyled>
+                <RightTextStyled>SORT</RightTextStyled>
+                <RightSortButtonStyled
+                  onClick={() => setIsOpen((prev) => !prev)}
+                >
+                  <SortButtonTextStyled>{sortName}</SortButtonTextStyled>
+                  <SortIconStyled $isOpen={isOpen} />
+                </RightSortButtonStyled>
+              </ButtonBlockStyled>
+              <SortItemsStyled>
+                {isOpen &&
+                  sortItems.map(({ title, id, key, type }) => (
+                    <ItemStyled
+                      key={id}
+                      onClick={() => setSortType(title, key, type)}
+                    >
+                      {title}
+                    </ItemStyled>
+                  ))}
+              </SortItemsStyled>
+            </ProductsRightSideStyled>
+          </ProductsContentStyled>
+          <Items category={categoryData} />
+        </ProductsContainerStyled>
+      </ProductsStyled>
+    </>
   );
 };

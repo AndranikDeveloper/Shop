@@ -60,6 +60,7 @@ export const InfoBottomStyled = styled.div`
 
 export const BottomTextStyled = styled.div`
   font-size: 16px;
+  display: flex;
 `;
 
 // ------LIKES-BLOCK--------------------------------------------------------------------------

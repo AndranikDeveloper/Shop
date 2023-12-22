@@ -12,6 +12,7 @@ import { imagesData } from "../../../utils/products-services";
 import { v4 } from "uuid";
 import { ProductLeftContent } from "../../product-left-content/index";
 import { ProductRightContent } from "../../product-right-content/index";
+import { Header } from "../../header";
 
 export const Item = () => {
   const { state: product } = useLocation();
@@ -43,6 +44,7 @@ export const Item = () => {
 
   return (
     <ProductStyled>
+      <Header />
       <ProductContainerStyled>
         <ProductContentStyled>
           <LeftSideStyled>

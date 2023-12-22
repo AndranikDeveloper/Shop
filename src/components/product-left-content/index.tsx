@@ -1,4 +1,3 @@
-import ReactImageMagnify from "react-image-magnify";
 import { selectImage, swipe } from "../../utils/products-services";
 import {
   ButtonWrapperStyled,
@@ -56,23 +55,7 @@ export const ProductLeftContent: React.FC<ProductLeftContentProps> = ({
           />
         </ButtonWrapperStyled>
       </SwiperBarStyled>
-      <ReactImageMagnify
-        {...{
-          smallImage: {
-            alt: "Wristwatch by Ted Baker London",
-            isFluidWidth: false,
-            src: productImage,
-            width: 370,
-            height: 470,
-          },
-          largeImage: {
-            src: productImage,
-            width: 1200,
-            height: 1800,
-          },
-        }}
-        style={{ margin: "20px 0 0 50px" }}
-      />
+      <img src={productImage} alt="clothes" />
     </>
   );
 };
