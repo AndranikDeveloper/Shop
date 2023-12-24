@@ -1,5 +1,5 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { InputStyled } from "./styled";
+import React, { Dispatch, SetStateAction } from 'react';
+import { InputStyled } from './styled';
 
 interface IInputProps {
   value: string;
@@ -18,7 +18,13 @@ export const Input: React.FC<IInputProps> = ({
 }) => {
   return (
     <>
-      <InputStyled $style={styles} value={value} placeholder={placeholder} />
+      <InputStyled
+        $style={styles}
+        value={value}
+        placeholder={placeholder}
+        onChange={(e) => setValue(e.target.value)}
+        type={type}
+      />
     </>
   );
 };

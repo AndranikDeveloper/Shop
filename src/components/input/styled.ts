@@ -1,14 +1,17 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 interface IInputStyledProps {
   $style: React.CSSProperties;
 }
 
 export const InputStyled = styled.input<IInputStyledProps>`
-  ${({ $style }) => $style}
+  ${({ $style }) => {
+    const { borderColor, ...restStyles } = $style || {};
+    return restStyles;
+  }}
 
   &:focus {
-    ${({ $style }) => $style.borderColor}
+    ${({ $style }) => ($style ? { borderColor: $style.borderColor } : '')}
   }
 `;

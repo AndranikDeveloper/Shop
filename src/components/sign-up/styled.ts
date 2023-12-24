@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { IoMdCloseCircle } from "react-icons/io";
+import styled from 'styled-components';
+import { IoMdCloseCircle } from 'react-icons/io';
 
 export const SignUpStyled = styled.div`
   width: 100vw;
@@ -9,6 +9,7 @@ export const SignUpStyled = styled.div`
   right: 0;
   bottom: 0;
   position: fixed;
+  z-index: 2;
 `;
 export const BackgroundStyled = styled(SignUpStyled)`
   background: rgba(60, 59, 59, 0.8);
@@ -25,6 +26,7 @@ export const SignUpModalStyled = styled.div`
   border-radius: 3px;
   min-width: 300px;
   height: 300px;
+  z-index: 3;
 `;
 
 export const CloseIconStyled = styled(IoMdCloseCircle)`
@@ -34,4 +36,11 @@ export const CloseIconStyled = styled(IoMdCloseCircle)`
   top: 10px;
   right: 10px;
   cursor: pointer;
+`;
+
+export const InputsBlockStyled = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 `;
